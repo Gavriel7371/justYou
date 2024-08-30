@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  background: #f4f4f9; /* Default light mode background */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+body.dark-mode {
+  background: #000000; /* Dark mode background for the entire page */
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 80px; /* Space for the fixed footer */
+  position: relative;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+/* Additional changes for dark mode are removed from here since they are moved to body */
+
+/* Intro Section */
+.introSection {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f9f9f9, #ececec);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+body.dark-mode .introSection {
+  background: linear-gradient(135deg, #1f1f1f, #2a2a2a); /* Dark mode background gradient */
+  color: #ffffff; /* Light text color for dark mode */
+}
+
+.introSection .actionTitle {
+  color: #2c1d45;
+}
+
+body.dark-mode .introSection .actionTitle {
+  color: #ffffff; /* Light text color for dark mode */
+}
+
+.underline {
+  width: 60px;
+  height: 5px;
+  background: #ff6347; /* Tomato color */
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.introText {
+  margin: 20px auto;
+  max-width: 800px;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+body.dark-mode .introText {
+  color: #ddd; /* Lighter text color for dark mode */
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+body.dark-mode .section {
+  background: #1f1f1f; /* Dark mode background */
+  color: #ffffff; /* Light text color for dark mode */
+}
+
+.aboutUs .aboutImg {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.textContent {
+  max-width: 60%;
+}
+
+.textContent h3 {
+  color: #2c1d45;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .textContent h3 {
+  color: #ffffff; /* Light text color for dark mode */
+}
+
+.textContent p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body.dark-mode .textContent p {
+  color: #ddd; /* Lighter text color for dark mode */
+}
+
+/* Floating Effect */
+.floatingEffect {
+  position: absolute;
+  bottom: 20px;
+  right: -60%;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floatingEffect div {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 99, 71, 0.4); /* Tomato color */
+  border-radius: 50%;
+  margin: 10px;
+  animation: floating 3s ease-in-out infinite;
+}
+
+.floatingEffect div:nth-child(2) {
+  animation-delay: 1s;
+  background: rgba(255, 99, 71, 0.3);
+}
+
+.floatingEffect div:nth-child(3) {
+  animation-delay: 2s;
+  background: rgba(255, 99, 71, 0.2);
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #2c1d45;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease; /* Smooth transition for theme changes */
+}
+
+body.dark-mode .footer {
+  background: #1f1f1f; /* Dark mode footer background */
+}
+
+.actionTitle {
+  text-align: center;
+}

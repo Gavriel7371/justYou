@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(241, 245, 241);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .signInContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 3%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signInTitle {
+    color: #2c1d45;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .signInForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .signInInput {
+    padding: 0.75rem;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .signInButton {
+    background-color: rgb(116, 116, 154);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .signInButton:hover {
+    background-color: white;
+    color: rgb(116, 116, 154);
+    border: 1px solid rgb(116, 116, 154);
+  }
+  
+  .signInFooter {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .signUpLink {
+    color: blue;
+    text-decoration: none;
+    margin-left: 0.5rem;
+  }
+  
+  .signUpLink:hover {
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,24 @@
+:root {
+    /* Light mode colors */
+    --background-color: #f0f0f5;
+    --text-color: #333;
+    --primary-color: #2c1d45;
+    --secondary-color: #c3cfe2;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --navbar-bg: #fff;
+    --footer-bg: #2c1d45;
+    --footer-text-color: #fff;
+  }
+  
+  /* Dark mode colors */
+  body.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #ff8c00;
+    --secondary-color: #333;
+    --box-shadow-color: rgba(255, 255, 255, 0.1);
+    --navbar-bg: #333;
+    --footer-bg: #1a1a1a;
+    --footer-text-color: #e0e0e0;
+  }
+  

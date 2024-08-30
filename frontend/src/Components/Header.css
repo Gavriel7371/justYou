@@ -1,0 +1,124 @@
+/* Header Container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #2c1d45, #ab47bc); /* Gradient background */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.headerLogo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+/* Title Styling */
+.header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Folder Tab Styling */
+.header button,
+.header .logoutBtn {
+  background: #fff;
+  color: #2c1d45; /* Dark purple text */
+  border: 2px solid transparent;
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  margin: 0 0.5rem;
+  position: relative; /* For tab styling */
+  overflow: hidden; /* To ensure border radius works */
+}
+
+/* Add a tab-like appearance */
+.header button::before,
+.header .logoutBtn::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  transition: background 0.3s ease;
+  z-index: -1; /* Place behind the button */
+}
+
+/* Folder Tab Styling on Hover */
+.header button:hover,
+.header .logoutBtn:hover {
+  background: #2c1d45; /* Dark purple background */
+  color: #fff; /* White text */
+  border: 2px solid #2c1d45; /* Dark purple border */
+  transform: scale(1.05);
+}
+
+.header button:hover::before,
+.header .logoutBtn:hover::before {
+  background: #2c1d45; /* Dark purple background for the tab */
+}
+
+/* Link Styling */
+.header a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Profile Greeting Styling */
+.header .profileGreeting {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff; /* White border */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Profile Greeting on Hover */
+.header .profileGreeting:hover {
+  color: #2c1d45; /* Light purple on hover */
+  background: #fff; /* Solid white background on hover */
+  border-color: #2c1d45; /* Dark purple border on hover */
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1rem !important;
+  }
+
+  .headerLogo {
+    margin-bottom: 1rem !important;
+  }
+
+  .header h1 {
+    margin-bottom: 1rem !important;
+  }
+
+  .header button {
+    margin: 0.5rem 0 !important;
+  }
+}
+  

@@ -1,0 +1,195 @@
+/* Contact.css */
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Main container */
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+  
+  /* Contact Page Body */
+  .contactPageBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    background: #f9f9f9; /* Light gray background */
+  }
+  
+  /* Contact Title */
+  .contactTitle {
+    color: #2c1d45;
+    font-size: 2rem; /* Slightly smaller */
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Underline */
+  .underline {
+    width: 50px; /* Smaller underline */
+    height: 4px;
+    background: #ff6f61; /* Softer Coral */
+    border-radius: 5px;
+    margin-bottom: 1.5rem; /* Reduced spacing */
+  }
+  
+  /* Contact Content */
+  .contactContent {
+    background: #fff;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly more shadow */
+    padding: 2rem; /* Comfortable padding */
+    max-width: 500px; /* Manageable width */
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Contact Subtitle */
+  .contactSubtitle {
+    color: #2c1d45;
+    font-size: 1.5rem; /* Slightly smaller */
+    margin-bottom: 1rem;
+  }
+  
+  /* Contact Description */
+  .contactDescription {
+    color: #555; /* Softer gray text */
+    font-size: 1rem; /* Consistent text size */
+    margin-bottom: 1.5rem; /* Reduced spacing */
+  }
+  
+  /* Contact Details */
+  .contactDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Moderate gap */
+  }
+  
+  /* Contact Item */
+  .contactItem h4 {
+    color: #ff6f61; /* Softer Coral */
+    font-size: 1rem; /* Consistent size */
+    text-align: center;
+  }
+  
+  .contactItem p {
+    color: #555; /* Softer gray text */
+    font-size: 0.9rem; /* Slightly smaller text */
+    margin: 0.2rem 0;
+  }
+  
+  /* Contact Button */
+  .contactButton {
+    background: #ff6f61; /* Softer Coral */
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    padding: 12px 22px; /* Comfortable padding */
+    font-size: 0.9rem; /* Slightly smaller text */
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease; /* Subtle effects */
+  }
+  
+  .contactButton:hover {
+    background: #e55342; /* Darker Coral */
+    transform: scale(1.03); /* Subtle hover effect */
+  }
+  
+  /* Footer */
+  .footer {
+    background: #2c1d45;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem; /* Adjusted padding */
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  /* Contact.css */
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .contactContainer,
+body.dark-mode .contactPageBody,
+body.dark-mode .contactContent,
+body.dark-mode .contactTitle,
+body.dark-mode .contactSubtitle,
+body.dark-mode .contactDescription,
+body.dark-mode .contactItem h4,
+body.dark-mode .contactItem p,
+body.dark-mode .contactButton {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+body.dark-mode .contactContainer {
+  margin: 5%;
+}
+
+body.dark-mode .contactPageBody {
+  background: #1e1e1e; /* Dark gray background */
+}
+
+body.dark-mode .contactTitle {
+  color: #bb86fc; /* Light purple */
+}
+
+body.dark-mode .underline {
+  background: #bb86fc; /* Light purple underline */
+}
+
+body.dark-mode .contactDescription {
+  color: #b0b0b0; /* Softer gray text */
+}
+
+body.dark-mode .contactButton {
+  background: #bb86fc; /* Light purple */
+}
+
+body.dark-mode .contactButton:hover {
+  background: #9b60e1; /* Darker purple */
+}
+
+/* Light Mode Styles */
+.contactContainer {
+  margin: 5%;
+}
+
+.contactPageBody {
+  background: #f9f9f9; /* Light gray background */
+}
+
+.contactTitle {
+  color: #2c1d45; /* Dark blue */
+}
+
+.underline {
+  background: #ff6f61; /* Softer Coral */
+}
+
+.contactDescription {
+  color: #555; /* Softer gray text */
+}
+
+.contactButton {
+  background: #ff6f61; /* Softer Coral */
+}
+
+.contactButton:hover {
+  background: #e55342; /* Darker Coral */
+}
